@@ -1,0 +1,47 @@
+html,body {
+    height: 100%;
+    width: 100%;
+  }
+
+#backdrop{
+    background-image: url(/images/backdrop.jpg);   
+    height: 990px;
+    widht: 1440px;
+    background-size: cover;
+}
+
+.arrow-down {
+    border-left: 700px solid transparent;
+    border-right: 700px solid transparent; 
+    border-top: 1050px solid #FFFFFF;
+
+    opacity: 0.0;
+
+    position: absolute;
+    left: -150px;
+
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;  
+  }
+
+@keyframes slidein { 
+    100% {opacity: 0.84;}
+}
+
+.logo{
+    z-index: 1;
+    position:relative;
+    left: 130px;
+
+    opacity: 0;
+
+    animation-name: logoslidein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes logoslidein { 
+    50% {opacity: 0.0;}
+    100% {opacity: 1.0;}
+}
