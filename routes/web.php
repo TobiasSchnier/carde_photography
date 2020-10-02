@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+//DB::listen(function($query){var_dump($query->sql, $query->bindings);});
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('home');
 });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/Port-Folio', 'PortFolioController@index');
+Route::get('/About', 'AboutController@index');
+Route::get('/Kontakt', 'KontaktController@index');
+
+Route::middleware('auth')->group(function(){
+    // Posts
+    Route::get('/posts/create', 'PostsController@create');
+    Route::post('/posts/createnewpost', 'PostsController@store');
+    Route::get('/posts/{post}/delete/{pic}', 'PostsController@delete');
+});
+
+Auth::routes();

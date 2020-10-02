@@ -1,3 +1,6 @@
+
+
+@media (min-width: 600px){
 html,body {
     height: 100%;
     width: 100%;
@@ -6,7 +9,7 @@ html,body {
 #backdrop{
     background-image: url(/images/backdrop.jpg);   
     height: 990px;
-    widht: 1440px;
+    width: 1440px;
     background-size: cover;
 }
 
@@ -25,6 +28,7 @@ html,body {
     animation-fill-mode: forwards;  
   }
 
+
 @keyframes slidein { 
     100% {opacity: 0.84;}
 }
@@ -33,6 +37,7 @@ html,body {
     z-index: 1;
     position:relative;
     left: 130px;
+    width: 60%;
 
     opacity: 0;
 
@@ -44,4 +49,246 @@ html,body {
 @keyframes logoslidein { 
     50% {opacity: 0.0;}
     100% {opacity: 1.0;}
+}
+
+#Port-Foliobtn{
+    position:relative;
+    left: 55%;
+
+    opacity: 0;
+
+    animation-name: buttonslidein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;  
+
+    transition: 0.5s;
+    -webkit-transition:500ms;
+	-moz-transition:500ms;
+}
+#Port-Foliobtn:hover{
+    left: 53%;
+    background-color: #2669b5;
+}
+
+#Aboutbtn{
+    position:relative;
+    left: 50%;
+
+    opacity: 0;
+
+    animation-name: buttonslidein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+    transition: 0.5s;
+    -webkit-transition:500ms;
+	-moz-transition:500ms;
+}
+#Aboutbtn:hover{
+    left: 48%;
+    background-color: #2669b5;
+}
+
+#Kontaktbtn{
+    position:relative;
+    left: 45%;
+
+    opacity: 0;
+
+    animation-name: buttonslidein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;  
+
+    transition: 0.5s;
+    -webkit-transition:500ms;
+	-moz-transition:500ms;
+}
+#Kontaktbtn:hover{
+    left: 43%;
+    background-color: #2669b5;
+}
+
+@keyframes buttonslidein { 
+    50% {opacity: 0.0;}
+    100% {opacity: 0.9;}
+}
+
+#navibar{
+    transition: 0.2s;
+    -webkit-transition:200ms;
+	-moz-transition:200ms;
+}
+#navibar:hover{
+    background-color: #2669b5;
+    padding-left: 1.5rem;
+}
+
+.fotos{  /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    3;
+    -moz-column-gap:      0px;
+    column-count:         3;
+    column-gap:           0px;  
+  }
+  
+  .fotos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+  }
+  #singlepic:hover {
+    border: olive 40px;
+  }
+  .pflogo{
+    width: 400px;
+  }
+}
+@media (max-width: 450px){
+    html,body {
+        height: 100%;
+        width: 100%;
+      }
+
+    #backdrop{
+        background-image: url(/images/backdrop_mobile.jpg);   
+        height: 734px;
+        width: 450px;
+        background-size: cover;
+    }
+    
+    .arrow-down {
+        border-left: 700px solid transparent;
+        border-right: 700px solid transparent; 
+        border-top: 1050px solid #FFFFFF;
+    
+        opacity: 0.0;
+    
+        position: absolute;
+        left: -150px;
+    
+        animation-name: slidein;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;  
+      }
+    
+    @keyframes slidein { 
+        100% {opacity: 0.84;}
+    }
+    
+    .logo{
+        z-index: 1;
+        position:relative;
+        left: 0%;
+        width: 100% !important: !;
+    
+        opacity: 0;
+    
+        animation-name: logoslidein;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;  
+    }
+    
+    @keyframes logoslidein { 
+        50% {opacity: 0.0;}
+        100% {opacity: 1.0;}
+    }
+    
+    #Port-Foliobtn{
+        position:relative;
+        left: 55%;
+    
+        opacity: 0;
+    
+        animation-name: buttonslidein;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;  
+    
+        transition: 0.5s;
+        -webkit-transition:500ms;
+        -moz-transition:500ms;
+    }
+    #Port-Foliobtn:hover{
+        left: 53%;
+        background-color: #2669b5;
+    }
+    
+    #Aboutbtn{
+        position:relative;
+        left: 50%;
+    
+        opacity: 0;
+    
+        animation-name: buttonslidein;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        
+        transition: 0.5s;
+        -webkit-transition:500ms;
+        -moz-transition:500ms;
+    }
+    #Aboutbtn:hover{
+        left: 48%;
+        background-color: #2669b5;
+    }
+    
+    #Kontaktbtn{
+        position:relative;
+        left: 45%;
+    
+        opacity: 0;
+    
+        animation-name: buttonslidein;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;  
+    
+        transition: 0.5s;
+        -webkit-transition:500ms;
+        -moz-transition:500ms;
+    }
+    #Kontaktbtn:hover{
+        left: 43%;
+        background-color: #2669b5;
+    }
+    
+    @keyframes buttonslidein { 
+        50% {opacity: 0.0;}
+        100% {opacity: 0.9;}
+    }
+    
+    #navibar{
+        transition: 0.2s;
+        -webkit-transition:200ms;
+        -moz-transition:200ms;
+        font-size: 1rem;
+    }
+    #navibar:hover{
+        background-color: #2669b5;
+        padding-left: 1.5rem;
+    }
+    .balken{
+        width: 255%;
+    }
+    .pflogo{
+        max-width: 300px;
+    }
+    .fotos{  /* Prevent vertical gaps */
+        /*line-height: 0;*/
+         
+        -webkit-column-count: 1;
+        -webkit-column-gap:   0px;
+        -moz-column-count:    1;
+        -moz-column-gap:      0px;
+        column-count:         1;
+        column-gap:           0px;  
+      }
+      
+      .fotos img {
+        /* Just in case there are inline attributes */
+        width: 100% !important;
+        height: auto !important;
+      }
+
 }

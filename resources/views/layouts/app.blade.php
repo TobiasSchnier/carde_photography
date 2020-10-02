@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ asset('js/app.es5.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -21,20 +22,20 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
     <style>
-
-</style>
+    </style>
+    
 </head>
 
-<body>
+
 
      
 
       
 
-    
+        @include('_cookie')
 
        
-          @yield('content')
+        @yield('content')
  
 
        
@@ -44,7 +45,7 @@
 
 
 
-</body>
+
 
 
 

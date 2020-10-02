@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<body style="overflow: hidden; position: fixed; ">
 @section('content')
 <div 
     class=""
@@ -10,17 +10,31 @@
 
     </div>
     <img 
-            class="logo"
-            src="images/logo.png" 
-            alt=""
-            style="width: 60%"
+        class="logo"
+        src="images/logo.png" 
+        alt=""
+        
             >
 
-    
+<?php
+$startbuttons = ['Port-Folio', 'About', 'Kontakt'];
+?>
 
+@foreach($startbuttons as $startbutton)
+<div class="flex rounded-full mt-5 items-center bg-blue-600"id="{{$startbutton . 'btn'}}">
+    <a 
+        href="/{{$startbutton}}"
+        class="font-serif tracking-wide w-56 h-20 text-xl text-white uppercase  text-center pt-6 pr-20 pl-4 "
+    >
+    {{$startbutton}}</a>
+
+    
+</div>
+@endforeach
 
     
 
 </div>
     
 @endsection
+</body>
