@@ -31,6 +31,15 @@
                 class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-3"
                 >andere Seite
             </a>
+
+            <p class="text-gray-700 text-base mb-1 mt-5">
+                Referenzen, mit denen ich bisher schon erfolgreich zusammengearbeitet habe:
+            </p>
+            <ul class="text-gray-700 text-base">
+                <li>astraplan GmbH</li>
+                <li>Impact Hub Ruhrgebiet</li>
+                <li>Fashionhouse Düsseldorf</li>
+            </ul>
             
 
             <p class="text-gray-700 text-base mt-5 mb-5">Für eine Anfrage oder eine geplante Zusammenarbeit kontaktieren Sie mich gerne per Mail:</p>

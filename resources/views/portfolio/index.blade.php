@@ -18,7 +18,28 @@
           <table class="table-auto" style="width: 600px">
             <tr>
     @endif
+<?php 
 
+$activepill = "border-blue-900 rounded py-1 px-3 bg-blue-600 text-white";
+$inactivepill = "border-white rounded hover:border-gray-200 text-blue-600 hover:bg-gray-200 py-1 px-3";
+
+?>
+
+
+    <ul class="flex pl-5">
+        <li class="mr-3">
+          <a class="inline-block border {{!empty($_GET['tag']) ? $inactivepill : $activepill }}" 
+          href="/Port-Folio">Alle</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block border {{!empty($_GET['tag']) ?  ($_GET['tag']=='outdoor' ? $activepill : $inactivepill ):$inactivepill}}" 
+          href="/Port-Folio?tag=outdoor">Outdoor</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block border {{!empty($_GET['tag']) ?  ($_GET['tag']=='indoor' ? $activepill : $inactivepill ):$inactivepill}}" 
+          href="/Port-Folio?tag=indoor">Indoor</a>
+        </li>
+    </ul>
 
     <div class="fotos p-1 mt-3">
         @foreach($posts as $post)

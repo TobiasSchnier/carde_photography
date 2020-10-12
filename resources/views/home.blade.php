@@ -21,10 +21,10 @@ $startbuttons = ['Port-Folio', 'About', 'Kontakt'];
 ?>
 
 @foreach($startbuttons as $startbutton)
-<div class="flex rounded-full mt-5 items-center bg-blue-600"id="{{$startbutton . 'btn'}}">
+<div class="flex rounded-full mt-5  bg-blue-600"id="{{$startbutton . 'btn'}}">
     <a 
         href="/{{$startbutton}}"
-        class="font-serif tracking-wide w-56 h-20 text-xl text-white uppercase  text-center pt-6 pr-20 pl-4 "
+        class="font-serif tracking-wide w-56 h-20 text-xl text-white uppercase  text-center pt-6  pl-1 "
     >
     {{$startbutton}}</a>
 

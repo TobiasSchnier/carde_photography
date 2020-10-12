@@ -10,7 +10,12 @@ class PortFolioController extends Controller
 
     public function index(Post $post)
     {
-        $posts = Post::latest()->get();
+        if(!empty($_GET['tag'])){
+            $posts = Post::where('tag',$_GET['tag'])->get();
+        }else{
+            $posts = Post::latest()->get();
+        }
+        
         return view('portfolio.index',['posts'=>$posts]);
     }
 }
