@@ -11,28 +11,19 @@
             <div class="mb-8">
             <div class="text-gray-900 font-bold text-xl mb-2">Carsten Deckert</div>
             <p class="text-gray-700 text-base">
-                Ich bin freier Fotograf aus Essen und seit x Jahren mit meiner Kamera im urbanen Raum unterwegs.  </br>
-                Meine fotografischen Schwerpunkte setze ich im Bereich der Stadt-, Architektur- aber auch Landschaftsfotografie.  </br>
-                Über die Jahre habe ich mir ein Auge für Symmetrie, Spiegelungen, aber auch Farbdesign angeeignet. </br>
-                Ich versuche stets das Lebendige und mit dem Statischen einzufangen. 
+            <i style="font-size: 20px">„Ein Bild sagt mehr als tausend Worte“ </i></br>schrieb Kurt Tucholsky schon im Jahre 1926. <br/>
+            In unserem heutigen digitalen und visuellen Zeitalter gilt dies umso mehr. Fotos sind das erste, <br/> was der User z.B. in einem Immobilien-Expose oder auf einer Internetseite wahrnimmt. </br>
+            Erst schweift der Blick über die Bilder und danach erfasst das Auge den Text. 
+            Es ist somit der erste Eindruck, <br/>den sie Ihrem Kunden präsentieren.</br></br>
+            Als selbstständiger Fotograf mit langjähriger Erfahrung in den Bereichen Architektur- und Eventfotografie </br> unterstützt ich Sie dabei, einen optimalen ersten Eindruck bei Ihren Kunden/Käufern oder Mietern zu hinterlassen.
             </p>
 
-            <p class="text-gray-700 text-base mb-5">
+            <p class="text-gray-700 text-base">
                 Eine Auswahl meiner Bilder finden Sie in meinem <a class="underline" href="/Port-Folio">Port-Folio</a>. </br></br>
-                Für mehr persönlich angehauchte Bilder lege ich Ihnen folgende Links ans Herz:
             </p>
-            <a 
-                href="https://www.instagram.com/cardephotography/"
-                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                >Carde-Photgraphy
-            </a>
-            <a 
-                href="https://www.instagram.com/cardephotography/"
-                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-3"
-                >andere Seite
-            </a>
 
-            <p class="text-gray-700 text-base mb-1 mt-5">
+
+            <p class="text-gray-700 text-base mb-1">
                 Referenzen, mit denen ich bisher schon erfolgreich zusammengearbeitet habe:
             </p>
             <ul class="text-gray-700 text-base">
@@ -42,7 +33,7 @@
             </ul>
             
 
-            <p class="text-gray-700 text-base mt-5 mb-5">Für eine Anfrage oder eine geplante Zusammenarbeit kontaktieren Sie mich gerne per Mail:</p>
+            <p class="text-gray-700 text-base mt-5 mb-5">Falls ich Ihr Interesse geweckt haben sollte, dann schreiben Sie mich gerne an und holen Sie sich ihr individuelles Angebot ein.</p>
             <a 
                 href="mailto:carste@carsten.de"
                 class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
